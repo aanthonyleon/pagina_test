@@ -1,0 +1,128 @@
+<nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-transparent" color-on-scroll="500">
+    <div class="container">
+      
+        <div class="navbar-translate">
+            <a class="navbar-brand" [routerLink]="['/index']" placement="bottom" ngbTooltip="Contribuimos con su empresa para mejorar la toma de decisiones a través de sus datos.">
+                Turing IA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/index" >
+                  <p>Inicio</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/nosotros" >
+                  <p>Nosotros</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <div ngbDropdown class="dropdown">
+                  <a class="nav-link dropdown-toggle" ngbDropdownToggle>
+                    <p>Servicios</p>
+                  </a>
+                  <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item">Business Analyst</a>
+                    <a class="dropdown-item">Workshop</a>
+                    <a class="dropdown-item">Capacitación</a>
+                    <a class="dropdown-item">Venta de Software</a>
+                    <a class="dropdown-item">Hardware</a>
+                    <a class="dropdown-item">Desarrollo de Software</a>
+                    <a class="dropdown-item">Balanced Scorecard</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <div ngbDropdown class="dropdown">
+                  <a class="nav-link dropdown-toggle" ngbDropdownToggle>
+                    <p>Tableu</p>
+                  </a>
+                  <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item">Desktop</a>
+                    <a class="dropdown-item">Prep</a>
+                    <a class="dropdown-item">Cloud</a>
+                    <a class="dropdown-item">Server</a>
+                    <a class="dropdown-item">Server Management</a>
+                    <a class="dropdown-item">Data Management</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/portal">
+                  <p>Portal</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/blog">
+                  <p>Blog</p>
+                </a>
+              </li>
+
+              <li class="nav-item" routerLink="/contacto">
+                <a class="nav-link btn btn-neutral">
+                  <p>Contacto</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" rel="tooltip" title="Nuestro Twitter" data-placement="bottom" href="https://twitter.com/IaTuring" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                  <p class="d-lg-none d-xl-none">Twitter</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" rel="tooltip" title="Nuestro Facebook" data-placement="bottom" href="https://www.facebook.com/profile.php?id=100072141934213" target="_blank">
+                  <i class="fab fa-facebook-square"></i>
+                  <p class="d-lg-none d-xl-none">Facebook</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" rel="tooltip" title="Nuestro Instagram" data-placement="bottom" href="https://www.instagram.com/ia_turing/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                  <p class="d-lg-none d-xl-none">Instagram</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" rel="tooltip" title="Nuestro Instagram" data-placement="bottom" href="https://www.instagram.com/ia_turing/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                  <p class="d-lg-none d-xl-none">Linkedin</p>
+                </a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>

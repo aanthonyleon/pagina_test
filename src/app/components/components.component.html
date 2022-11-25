@@ -1,0 +1,110 @@
+<div class="wrapper">
+  <div class="page-header clear-filter" filter-color="black">
+    <div class="page-header-image rellax-header" data-rellax-speed="-7" style="background-image: url('assets/img/angel2.jpeg');">
+
+    </div>
+      <div class="container">
+          <div class="content-center brand">
+            <img class="n-logo" src="assets/img/logo-black.png" alt="">
+            <h1 class="h1-seo">TURING IA</h1>
+            <h3>Bienvenido<br>Hacemos los datos fáciles de usar</h3>
+          </div>
+      </div>
+  </div>
+
+  <div class="main">
+    <app-basicelements></app-basicelements>
+    <div class="container">
+        <div class="title">
+            <h4 class="text-center">LO QUE TE OFRECEMOS</h4>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                    <img class="d-block" src="assets/img/angel3.jpeg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>VENTA DE HARDWARE</h5>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img class="d-block" src="assets/img/bg3.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>IMPLEMENTACIÓN DE PROYECTOS (BUSINESS ANALYST)</h5>
+                    </div>
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img class="d-block" src="assets/img/angel3.jpeg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>DESARROLLO DE APLICACIONES</h5>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-team text-center">
+        <div class="container">
+            <h2 class="title">HISTORIAS DE CLIENTES</h2>
+            <div class="team">
+                <div class="row">
+
+                    <div class="col-md-4" *ngFor="let number of [0,1,2]">
+                        <div class="team-player">
+                            <img src="assets/img/wholefoodsteaser1.jpeg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">Whole Foods</h4>
+                            <p class="description">Whole Foods Market democratiza el acceso a los datos en sus 460 tiendas para 18 000 empleados gracias a Tableau</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="d-flex flex-column h-100">
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">Turing IA</h5>
+                    <p class="small text-muted">
+                        Av. Insurgentes 601
+                        <br>Col. Nápoles, Benito Juárez
+                        <br>Ciudad de México, México
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Mapa de sitio</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Nuestros servicios</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Capacitación</a></li>
+                        <li><a href="#">Venta de software</a></li>
+                        <li><a href="#">Venta de hardware</a></li>
+                        <li><a href="#">Desarrollo de Apps</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Inscribete en nustro newsletter</h5>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
